@@ -3,8 +3,16 @@
 
 
 {% block content %}
-    <div class="section-top">
-        <img src="{% static 'img/slider0.jpg' %}" class="img-responsive">
+    <div class="description">
+        <div class="container">
+            <h1 class="text-center">История бренда RIPNDIP</h1>
+            <img src="{% static 'img/ripndip-pop-up-la-fairfax-00.jpg' %}" />
+            <p>Всё началось в 2009 году, когда создатель марки <b>Райян ОКоннор</b> работал в скейтерском лагере. В то время была довольна напряженная обстановка, полицейские все время гнали ребят с досками со спотов, и тогда в голове Райяна отложилась фраза RIP — потому, что катание на любимых спотах было практически невозможным, и DIP — необходимость убраться до приезда копов.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Bx8_cg9OvbM" frameborder="0" allowfullscreen></iframe>
+            <p>Раян написал «RIPNDIP» на своей доске во время перебывания в лагере, и остальные парни начали повторять за ним. Тогда-то Раян и понял для себя, что эта фраза цепляет, и уже скоро свет увидел футболки под этой маркой, напечатанные в гараже своей мамы в Орландо. Сейчас Райян живёт и катется в Лос-Анжелесе, и уже на фабриках отшивает качественную одежду, вдохновлённую жизнью уличных скейтеров.</p>
+             <img src="{% static 'img/ripndip-collage-kiev-kapkan.jpg' %}" />
+            <p>В линейку <b>RIPNDIP</b> их линейке можно найти кепки, майки, футболки, рубашки и доски, а оригинальные принты бренда котируют не только поклонники streetwear’а, но и журналы вроде GQ и Rolling Stones. Кроме того, <b>RIPNDIP</b> постоянно спонсируют скейтерские мероприятия, организовывают тематические вечеринки и снимают видео, где режиссёром часто выступает сам Райян.</p>
+        </div>
     </div>
     <div class="section section1">
         <div class="container">
@@ -18,11 +26,6 @@
                     {% include 'landing/product_item.html' %}
                 {% endfor %}
             </div>
-        </div>
-    </div>
-    <div class="section section-delivery">
-        <div>
-            <h3>Free shipping</h3>
         </div>
     </div>
     <div class="section section2 phones-container">

@@ -23,7 +23,8 @@ html, body{
     margin-top: -180px; /* negative value of footer height */
     height: 180px;
     clear: both;
-    background-color: white;
+    background: url('../img/footer_bg.jpg');
+    background-size: cover;
 }
 
 .section-top{
@@ -83,14 +84,18 @@ html, body{
 
 .navbar-top{
     min-height: 10px;
-    height: 20px;
-    background-color: green;
+    height: 200px;
     border: none;
     border-radius: 0;
+    background: url('../img/footer_bg.jpg');
+    background-size: cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .navbar-main{
-    background-color: #55e073;
+    background-color: #7F7F7F;
     border: none;
     border-radius: 0;
 }
@@ -105,11 +110,69 @@ html, body{
     position: absolute;
     top: 50px;
     width: 100%;
-    background-color: #55e093;
+    background-color: #7F7F7F;
     z-index: 10;
     padding: 10px;
 }
 
 .form-error{
     color: red;
+}
+
+.logo {
+    width: 120px;
+    height: 150px
+}
+
+#navbar a {
+    color: #FFFFFF;
+}
+
+.description img {
+    margin: 10px 0;
+}
+
+.contacts {
+    margin: 10px;
+    float: left;
+}
+
+.contacts p {
+    font-size: 16px;
+}
+
+.contacts .link {
+    font-size: 14px;
+    color: #808080;
+}
+
+.share42init {
+    float: right;
+    margin: 10px;
+}
+
+#toTop {
+    width:100px;
+    border:1px solid #ccc;
+    background:#f7f7f7;
+    text-align:center;
+    padding:5px;
+    position:fixed;
+    bottom:10px; /* отступ кнопки от нижнего края страницы*/
+    right:10px;
+    cursor:pointer;
+    display:none;
+    color:#333;
+    font-family:verdana;
+    font-size:11px;
+}
+
+.sub-menu {
+   position:absolute;
+   display:none;
+   background: #555;
+}
+
+.navbar-nav li:hover > ul {
+   display:block;
 }

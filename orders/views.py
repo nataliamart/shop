@@ -77,7 +77,7 @@ def checkout(request):
                                                   total_price = product_in_basket.total_price,
                                                   order=order)
 
-            return HttpResponse(request.META.HTTP_REFERER)
+            return HttpResponse(request.META.get('HTTP_REFERER'))
         else:
             print("no")
     return render(request, 'orders/checkout.html', locals())

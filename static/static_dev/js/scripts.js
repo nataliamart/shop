@@ -64,18 +64,17 @@ $(document).ready(function(){
         $('.basket-items').removeClass('hidden');
     };
 
-    //$('.basket-container').on('click', function(e){
-    //    e.preventDefault();
-    //    showingBasket();
-    //});
+    function hideBasket() {
+        $('.basket-items').addClass('hidden');
+    };
 
      $('.basket-container').mouseover(function(){
          showingBasket();
      });
 
-     //$('.basket-container').mouseout(function(){
-     //    showingBasket();
-     //});
+     $('.basket-container').mouseout(function(){
+         hideBasket();
+     });
 
      $(document).on('click', '.delete-item', function(e){
          e.preventDefault();
