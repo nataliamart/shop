@@ -14,30 +14,45 @@
             <p>В линейку <b>RIPNDIP</b> их линейке можно найти кепки, майки, футболки, рубашки и доски, а оригинальные принты бренда котируют не только поклонники streetwear’а, но и журналы вроде GQ и Rolling Stones. Кроме того, <b>RIPNDIP</b> постоянно спонсируют скейтерские мероприятия, организовывают тематические вечеринки и снимают видео, где режиссёром часто выступает сам Райян.</p>
         </div>
     </div>
-    <div class="section section2 phones-container">
+    <div class="section section2">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="text-center">
-                        Телефоны
+                        Рубашки
                     </h1>
                 </div>
-                {% for product_image in products_images_phones %}
+                {% for product_image in products_images_shirts %}
                     {% include 'landing/product_item.html' %}
                 {% endfor %}
 
             </div>
         </div>
     </div>
-    <div class="section section3 laptops-container">
+    <div class="section section3">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="text-center">
-                        Ноутбуки
+                        Толстовки
                     </h1>
                 </div>
-                {% for product_image in products_images_laptops %}
+                {% for product_image in products_images_sweatshirts %}
+                    {% include 'landing/product_item.html' %}
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+    <div class="section section4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="text-center">
+                        Аксессуары
+                    </h1>
+                </div>
+                {% for product_image in products_images_accessories %}
                     {% include 'landing/product_item.html' %}
                 {% endfor %}
 

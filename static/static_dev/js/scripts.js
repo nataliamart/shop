@@ -78,7 +78,8 @@ $(document).ready(function(){
 
      $(document).on('click', '.delete-item', function(e){
          e.preventDefault();
-         product_id = $(this).data("product_id")
+         product_id = $(this).data("product_id");
+         console.log(product_id)
          nmb = 0;
          basketUpdating(product_id, nmb, is_delete=true)
      });
@@ -108,5 +109,11 @@ $(document).ready(function(){
 
 
     calculatingBasketAmount();
+
+    $(document).on('input', "#number", function() {
+       if ($(this).val() < 0) {
+           $(this).val(0);
+       }
+    });
 
 });

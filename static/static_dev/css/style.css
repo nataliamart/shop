@@ -166,13 +166,3 @@ html, body{
     font-family:verdana;
     font-size:11px;
 }
-
-.sub-menu {
-   position:absolute;
-   display:none;
-   background: #555;
-}
-
-.navbar-nav li:hover > ul {
-   display:block;
-}
